@@ -1,0 +1,93 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+@font-face {
+font-family: "Oxygen-Regular";
+src: url("../fonts/Oxygen-Regular.ttf") format("truetype");
+}
+
+body{
+	margin:auto;
+	margin-top:2%;
+	font-family: Oxygen-Regular, sans-serif;
+}
+
+.container{
+	margin-top:2%;
+}
+
+.header{
+	padding: 1em 1em;
+	display: inline-block;
+	background: #d4e4ef;
+	background: -moz-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
+	background: -webkit-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -o-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -ms-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: linear-gradient(135deg, #d4e4ef 0%, #86aecc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+	border-radius: 0.5em;
+}
+
+#logo{
+	
+	width: 4em;
+	height: 4em;
+	float: left;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+}
+
+#titulo{
+	
+	text-align: center;
+	font-size: 2em;
+	font-style: bold;
+	text-shadow: 0.1em 0.1em #f0f0f5;
+}
+
+#reloj{
+	font-size: 1.5em;
+	font-style: bold;
+
+}
+
+#footer{
+	background: #d4e4ef;
+	background: -moz-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
+	background: -webkit-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -o-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: -ms-linear-gradient(-45deg, #d4e4ef 0%, #86aecc 100%);
+	background: linear-gradient(135deg, #d4e4ef 0%, #86aecc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+	border-radius: 0.5em;
+	text-align: center;
+
+}
+
+tr.highlight {
+    background-color: #ffffb3 !important;
+    font-weight: bold;
+}
+
+tr.downlight {
+    background-color: #ffffff !important;
+}
+
+table {
+margin: 0 auto;
+width: 100%;
+clear: both;
+border-collapse: collapse;
+table-layout: fixed;  
+word-wrap:break-word; /*normal*/
+
+}
+
+
+

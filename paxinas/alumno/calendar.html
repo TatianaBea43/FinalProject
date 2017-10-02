@@ -1,0 +1,65 @@
+ 
+ <div class="container-fluid" >
+	 <div class="container-fluid">
+	 	<div class="col-md-offset-1">
+	 		<button type="button" class="btn btn-success" id="botonevento">Añadir evento</button>
+	 	</div>
+	 </div>
+ 	 <div class="container" id="jMonthCalendar"></div>
+ 	 <!--modalEvento-->
+ <div class="modal fade" id="myModalEvento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-calendar"></span> Añadir evento</h4>
+            </div>
+            <div class="modal-body">
+              
+              <form class="form-horizontal" id="formularioEvento">
+          
+                  
+                <input type="hidden" class="form-control" name="id_alumnoModal" id="id_alumnoModal"> 
+               
+                
+                <div class="form-group" id="divfecha">
+                   <div class="col-sm-7">
+                    <label for="fecha">Fecha</label>
+                    <input type="text" class="form-control" name="fecha" id="datepicker">
+                    <span id="helpBlock1" class="help-block hide">No has introducido la fecha</span>
+                  </div>
+                </div>
+
+                <div class="form-group" id="divtituloevento">
+                   <div class="col-sm-12">
+                    <label for="tituloevento">Titulo</label>
+                    <input type="text" class="form-control" name="tituloevento" id="tituloevento">
+                    <span id="helpBlock3" class="help-block hide">No has introducido el título</span>
+                  </div>
+                </div>
+                
+                  
+                <div class="form-group" id="divdescripcion">
+                  <div class="col-sm-12 ">
+                    <label for="descripcion">Descripción</label>
+                   <textarea class="form-control" id="descripcion" name="descripcion" rows="4"></textarea>
+                    <span id="helpBlock2" class="help-block hide">No has introducido el evento</span>
+                  </div>
+                </div>
+
+              </form>
+    			<br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="botonCerrarEvento">Cerrar</button>
+              <button type="button" class="btn btn-primary" id="botonModalEvento">Añadir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+ </div>
+
+
+ 
+
+ <script src="alumno/calendar.js" type="text/javascript" charset="utf-8" async defer></script>

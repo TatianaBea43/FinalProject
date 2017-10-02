@@ -1,0 +1,98 @@
+
+<div class="panel panel-info">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading">Empresas</div>
+	  <div class="panel-body">
+	    <table id="empresas" class="table table-striped table-bordered table-hover table-condensed" width="100%" cellspacing="0">
+	        <thead>
+	            <tr>
+                  <th>id</th>
+	                <th>Nombre</th>
+	                <th>Dirección</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                  <th>Tutor</th>
+                  <th>Estado</th>
+                  <th></th>
+	            </tr>
+	        </thead>
+	      </table>
+       </div>
+     </div>  
+    
+    <!--formulario modal-->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-user"></span> Añadir empresa</h4>
+            </div>
+            <div class="modal-body">
+              <!--FORMULARIO-->
+              <form class="form-horizontal" id="formulario">
+              <!--El input que va a continuación solamente vale como elemento al que yo puedo cambiar el valor para poder ejecutar los diferentes casos del switch-->
+                <input type="hidden" id="opcion" name="opcion" value="">
+                  
+                  <input type="hidden" class="form-control" name="id" id="id">              
+                
+                  <div class="form-group" id="divrazonsocial">
+                  <div class="col-sm-12">
+                    <label for="razonsocial">Nombre/Razón Social</label>
+                    <input type="text" class="form-control" name="razonsocial" id="razonsocial" >
+                    <span id="helpBlock1" class="help-block hide">No has introducido el nombre de la empresa</span>
+                  </div>
+                  </div>
+
+                  <div class="form-group" id="divdireccion">
+                    <div class="col-sm-12">
+                      <label for="direccion">Dirección</label>
+                      <input type="text" class="form-control" id="direccion" name="direccion">
+                      <span id="helpBlock2" class="help-block hide">No has introducido la dirección</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group" id="divemail">
+                    <div class="col-sm-12">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" id="email" name="email">
+                      <span id="helpBlock3" class="help-block hide">No has introducido el email</span>
+                    </div>
+                  </div>
+                
+                  <div class="form-group" id="divtelefono">
+                  <div class="col-sm-12">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono">
+                    <span id="helpBlock4" class="help-block hide">No has introducido el teléfono</span>
+                  </div>
+                  </div>
+
+                  <div class="form-group" id="divtutor">
+                  <div class="col-sm-12">
+                    <label for="tutor">Tutor</label>
+                    <input type="text" class="form-control" id="tutor" name="tutor">
+                    <span id="helpBlock5" class="help-block hide">No has introducido el nombre del tutor</span>
+                  </div>
+                  </div>
+                  <label for="estado">Estado</label>
+                  <select class="form-control" name="estado" id="estado">
+                    <option value="0">No activa</option>
+                    <option value="1">Activa</option>
+                  </select>
+                
+              </form>
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="botonCerrar">Cerrar</button>
+              <button type="button" class="btn btn-primary" id="botonModal"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript" src="administrador/gestionempresa/empresas.js"></script>
+
+      
+      

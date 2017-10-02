@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	margin:auto;
+	text-align:center;
+	margin-top:2%;
+
+}
+
+.header{
+	width: 90%;
+	height: 5em;
+	display: inline-block;
+	background-color: #e6f2ff;
+	border-radius: 0.5em;
+}
+
+#logo{
+	width: 4em;
+	height: 4em;
+	float: left;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+}
+
+#titulo{
+	margin-top: 1.5em;
+	text-align: center;
+	text-shadow: 0.2em 0.2em #c2d6d6;
+	font-family: "Arial", Sans-serif;
+	font-size: 1.2em;
+
+}
+
+.transparencia{
+	opacity: 0.5;
+}
+
+nav {
+	margin-bottom: 2%;
+}
+
+/*.panel-heading{
+	background-color: #859ca2 !important;
+	border-color: #859ca2 !important;
+}
+
+.panel-body{
+	border-box: #859ca2 !important;
+}*/
+
